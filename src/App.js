@@ -1,22 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [lat, setLat] = useState(38.9517);
+  const [long, setLong] = useState(-92.3341);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // navigator.geolocation.getCurrentPosition(function(position) {
+      //   setLat(position.coords.latitude);
+      //   setLong(position.coords.longitude);
+      // });
+
+      await fetch(process.env.REACT_APP_WEATHER_URL, {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ lat, long })
+      })
+      .then(response => response.json())
+      .then(result => {
+        setData(result)
+        console.log(result);
+      });
+    }
+    fetchData();
+  }, [lat,long])
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>{JSON.stringify(data)}</p>
       </header>
     </div>
   );
