@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:client-dev": "react-scripts start"
+    "env": "sync-dotenv",
+    "start:client-dev": "react-scripts start",
+    "test:watch": "react-scripts test",
+    "test": "react-scripts test --watchAll=false"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
@@ -23,6 +25,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "husky": "^7.0.4",
+    "sync-dotenv": "^2.6.2",
     "web-vitals": "^1.1.2"
   },
   "eslintConfig": {
