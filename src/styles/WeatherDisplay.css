@@ -1,0 +1,13 @@
+.weather-display-container {
+  margin: 15px;
+  color: darkslategrey;
+  display: flex;
+  width: 484px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+}
+
+.current-conditions-card {
+  box-shadow: 0 1px 6px 0 rgba(195, 207, 245, 0.28);
+  border-color: rgba(223,225,229,0);
+}
