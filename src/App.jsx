@@ -57,7 +57,7 @@ export default function App() {
           <div className="px-6 py-6 relative">
             <LocationInput setLat={setLat} setLng={setLng} />
           </div>
-          <div class="block sm:flex justify-between items-center flex-wrap"></div>
+          <div className="block sm:flex justify-between items-center flex-wrap"></div>
           {(!!lat && !!lng) &&
             <WeatherDisplay
               currentConditions={currentConditions}
