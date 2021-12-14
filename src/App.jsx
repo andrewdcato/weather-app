@@ -1,4 +1,3 @@
-import './styles/App.css';
 import { useEffect, useState } from 'react';
 import LocationInput from './components/LocationInput';
 import WeatherDisplay from './components/WeatherDisplay';
@@ -52,19 +51,22 @@ export default function App() {
   } = useGetForecast(lat, lng);
 
   return (
-    <div className="app">
-      <LocationInput
-        setLat={setLat}
-        setLng={setLng}
-      />
-
-      {(!!lat && !!lng) &&
-        <WeatherDisplay
-          currentConditions={currentConditions}
-          forecast={forecast}
-          isLoading={isLoading}
-        />
-      }
+    <div className="mx-auto p-4 bg-blue-400 h-screen flex justify-center">
+      <div className="flex flex-wrap">
+        <div className="w-full px-2">
+          <div className="px-6 py-6 relative">
+            <LocationInput setLat={setLat} setLng={setLng} />
+          </div>
+          <div class="block sm:flex justify-between items-center flex-wrap"></div>
+          {(!!lat && !!lng) &&
+            <WeatherDisplay
+              currentConditions={currentConditions}
+              forecast={forecast}
+              isLoading={isLoading}
+            />
+          }
+        </div>
+      </div>
     </div>
   );
 }

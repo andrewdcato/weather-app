@@ -1,4 +1,3 @@
-import '../styles/LocationInput.css';
 import React, { useState, useEffect, useRef } from "react";
 let autoComplete;
 
@@ -32,7 +31,7 @@ function loadScript(url, callback) {
  *
  * @param {Object} param0 - funcs for updating app state
  */
-async function handlePlaceSelect({ setLat, setQuery, setLng }) {
+function handlePlaceSelect({ setLat, setQuery, setLng }) {
   const place = autoComplete.getPlace();
   const { formatted_address, geometry } = place;
 
@@ -97,16 +96,14 @@ export default function LocationInput({ setLat, setLng }) {
 
   return (
     <>
-      <div className="search-location-input">
-        <input
-          type="text"
-          placeholder="Enter a City"
-          data-testid='location-input'
-          ref={autoCompleteRef}
-          onChange={event => setQuery(event.target.value)}
-          value={query}
-        />
-      </div>
+      <input
+        type="text"
+        placeholder="Enter a City"
+        data-testid='location-input'
+        ref={autoCompleteRef}
+        onChange={event => setQuery(event.target.value)}
+        value={query}
+      />
     </>
   );
 }
