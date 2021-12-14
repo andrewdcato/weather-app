@@ -96,14 +96,22 @@ export default function LocationInput({ setLat, setLng }) {
 
   return (
     <>
-      <input
-        type="text"
-        placeholder="Enter a City"
-        data-testid='location-input'
-        ref={autoCompleteRef}
-        onChange={event => setQuery(event.target.value)}
-        value={query}
-      />
+      <div>
+        <label htmlFor="city" className="sr-only">
+          City
+        </label>
+
+        <input
+          type="text"
+          name="city"
+          className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+          placeholder="Enter a City"
+          data-testid='location-input'
+          ref={autoCompleteRef}
+          onChange={event => setQuery(event.target.value)}
+          value={query}
+        />
+      </div>
     </>
   );
 }
