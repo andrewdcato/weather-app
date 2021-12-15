@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Divider from './components/Divider';
 import LocationInput from './components/LocationInput';
 import WeatherDisplay from './components/WeatherDisplay';
 
@@ -7,7 +8,7 @@ function useGetForecast(lat, lng) {
   const [isLoading, setIsLoading] = useState(false);
 
   // Forecast data
-  const [currentConditions, setCurrentConditions] = useState(null);
+  const [current, setCurrent] = useState(null);
   const [forecast, setForecast] = useState(null);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ function useGetForecast(lat, lng) {
         await fetch(url)
           .then(response => response.json())
           .then(result => {
-            setCurrentConditions(result?.current);
+            setCurrent(result?.current);
             setForecast(result?.daily);
           })
           .then(() => setIsLoading(false));
@@ -35,7 +36,7 @@ function useGetForecast(lat, lng) {
     fetchData(lat, lng);
   }, [lat, lng]);
 
-  return { currentConditions, forecast, isLoading };
+  return { current, forecast, isLoading };
 }
 
 export default function App() {
@@ -45,22 +46,24 @@ export default function App() {
 
   // Forecast and animation toggle
   const {
-    currentConditions,
+    current,
     forecast,
     isLoading
   } = useGetForecast(lat, lng);
 
   return (
-    <div className="mx-auto p-4 bg-blue-400 h-screen flex justify-center">
+    <div className="mx-auto p-4 bg-blue-100 flex h-screen justify-center items-center">
       <div className="flex flex-wrap">
         <div className="w-full px-2">
-          <div className="px-6 py-6 relative">
+          <div className="p-6 relative">
             <LocationInput setLat={setLat} setLng={setLng} />
           </div>
-          <div className="block sm:flex justify-between items-center flex-wrap"></div>
+
+          <Divider />
+
           {(!!lat && !!lng) &&
             <WeatherDisplay
-              currentConditions={currentConditions}
+              current={current}
               forecast={forecast}
               isLoading={isLoading}
             />
