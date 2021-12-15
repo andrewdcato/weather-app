@@ -9,11 +9,12 @@
     "env": "sync-dotenv",
     "postinstall": "npx husky install",
     "start:client-dev": "craco start",
-    "test:watch": "craco test",
+    "test:watch": "craco test --watchAll=true",
     "test": "craco test --watchAll=false"
   },
   "dependencies": {
     "@craco/craco": "^6.4.3",
+    "@heroicons/react": "^1.0.5",
     "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "react": "^17.0.2",
