@@ -42,3 +42,36 @@ export function getTimeStamp() {
     year: now.year(),
   }
 }
+
+export function getForecastDay(day) {
+  const timestamp = new dayjs.unix(day);
+
+  console.log(timestamp.toString());
+
+  const idx = timestamp.day();
+
+  return [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ].at(idx);
+}
+
+export function getMoonPhase(val) {
+  let phase;
+
+  if (val === 0 || val === 1) phase = 'New Moon';
+  else if (val <= 0.24) phase = 'Waxing Crescent';
+  else if (val === 0.26) phase = 'First Quarter';
+  else if (val <= 0.49) phase = 'Waxing Gibbous';
+  else if (val === 0.50) phase = 'Full Moon';
+  else if (val <= 0.74) phase = "Waning Gibbous";
+  else if (val === 0.75) phase = 'Last Quarter';
+  else if (val <= 0.99) phase = 'Waning Crescent';
+
+  return phase;
+}
