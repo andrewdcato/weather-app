@@ -7,7 +7,7 @@ To get started, you'll need to install deps and update some secrets in the `.env
 ### Tools Used
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and leans on default tooling. I've added a few [Husky](https://github.com/typicode/husky) hooks to force test runs and dummy dotenv file generation before commits can be pushed to origin.
 
-Place selection is handled by the [Google Places API](). Forecast lookup is handled by the [OpenWeatherMap One Call API](https://openweathermap.org/api/one-call-api#parameter).
+Place selection is handled by the [Google Places API](https://developers.google.com/maps/documentation/places/web-service/autocomplete). Forecast lookup is handled by the [OpenWeatherMap One Call API](https://openweathermap.org/api/one-call-api#parameter).
 
 ### Available Scripts
 #### `npm start`
