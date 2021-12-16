@@ -1,20 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import React from 'react';
+import renderer from 'react-test-renderer';
 import App from '../App';
 
-test('renders location search field', () => {
-  render(<App />);
-  const inputElement = screen.getByTestId('location-input');
-
-  expect(inputElement).toBeInTheDocument();
-  expect(inputElement).toHaveAttribute('type', 'text');
+test('matches snapshot', () => {
+  const app = renderer.create(<App />).toJSON();
+  expect(app).toMatchSnapshot();
 });
-
-// test('successfully finds a valid city', () => {
-//   render(<App />);
-//   const inputElement = screen.getByTestId('location-input');
-//   userEvent.type('inputElement', 'New York, NY, USA');
-
-//   expect(inputElement).toBeInTheDocument();
-//   expect(inputElement).toHaveAttribute('type', 'text');
-// })

@@ -1,0 +1,782 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`properly renders with forecast data 1`] = `
+<div
+  className="mt-6"
+>
+  <h3
+    className="text-xl"
+  >
+    Hourly Forecast
+  </h3>
+  <div
+    className="mt-3 place-content-center"
+  >
+    <div
+      className="flex overflow-x-auto overscroll-none scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-blue-400 scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+    >
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40 rounded-l "
+      >
+        <span>
+          8 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          9 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          10 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          11 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="text-center bg-blue-600 text-white mb-4"
+        style={
+          Object {
+            "transform": "rotate(-180deg)",
+            "writing-mode": "vertical-lr",
+          }
+        }
+      >
+        Wednesday
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          12 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          1 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          2 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          3 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          4 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          5 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          6 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          63
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          7 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          64
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          8 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          64
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          9 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          65
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          10 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          66
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          11 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          67
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          12 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          69
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          1 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          70
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          2 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          70
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          3 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          69
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          4 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          67
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          5 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          65
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          6 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          63
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          7 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          60
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          8 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          60
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          9 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          59
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          10 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          60
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          11 pm
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          60
+          °
+        </span>
+      </div>
+      <div
+        className="text-center bg-blue-600 text-white mb-4"
+        style={
+          Object {
+            "transform": "rotate(-180deg)",
+            "writing-mode": "vertical-lr",
+          }
+        }
+      >
+        Thursday
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          12 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          60
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          1 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          61
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          2 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          61
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          3 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          61
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          4 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          61
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          5 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          61
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          6 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          7 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10n@2x.png"
+        />
+        <span>
+          62
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          8 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          63
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          9 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          64
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          10 am
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <span>
+          66
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          11 am
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          68
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          12 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          69
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          1 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          70
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          2 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          71
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          3 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          71
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          4 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <span>
+          69
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  "
+      >
+        <span>
+          5 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          67
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
+      >
+        <span>
+          6 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          66
+          °
+        </span>
+      </div>
+      <div
+        className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-80  rounded-r"
+      >
+        <span>
+          7 pm
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+        <span>
+          65
+          °
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`properly renders with no forecast data 1`] = `
+<div
+  className="mt-6"
+>
+  <h3
+    className="text-xl"
+  >
+    Hourly Forecast
+  </h3>
+  <div
+    className="mt-3 place-content-center"
+  >
+    <div
+      className="flex overflow-x-auto overscroll-none scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-blue-400 scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+    />
+  </div>
+</div>
+`;
