@@ -64,7 +64,7 @@ export function getMoonPhase(val) {
 
   if (val === 0 || val === 1) phase = 'New Moon';
   else if (val <= 0.24) phase = 'Waxing Crescent';
-  else if (val === 0.26) phase = 'First Quarter';
+  else if (val === 0.25) phase = 'First Quarter';
   else if (val <= 0.49) phase = 'Waxing Gibbous';
   else if (val === 0.50) phase = 'Full Moon';
   else if (val <= 0.74) phase = "Waning Gibbous";
