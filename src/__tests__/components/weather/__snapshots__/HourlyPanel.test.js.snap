@@ -84,7 +84,7 @@ exports[`properly renders with forecast data 1`] = `
           }
         }
       >
-        Wednesday
+        Thursday
       </div>
       <div
         className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "
@@ -455,7 +455,7 @@ exports[`properly renders with forecast data 1`] = `
           }
         }
       >
-        Thursday
+        Friday
       </div>
       <div
         className="mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 bg-opacity-40  "

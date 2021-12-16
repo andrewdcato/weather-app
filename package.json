@@ -8,6 +8,8 @@
     "eject": "react-scripts eject",
     "env": "sync-dotenv",
     "postinstall": "npx husky install",
+    "prestart": "npm run build",
+    "start": "npx serve -s build",
     "start:client-dev": "craco start",
     "test:watch": "craco test --watchAll=true",
     "test": "craco test --watchAll=false"

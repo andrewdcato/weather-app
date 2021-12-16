@@ -6,6 +6,10 @@ function HourlyCard({ hour, idx, max }) {
 
   return (
     <>
+      {time === '12 am' && (
+        <div className="text-center bg-blue-600 text-white mb-4" style={{'writing-mode': 'vertical-lr', transform: 'rotate(-180deg)'}}>{day}</div>
+      )}
+
       <div
         className={`mb-4 min-w-max flex flex-col text-center shadow bg-blue-200 ${ idx % 2 !== 0 ? 'bg-opacity-80' : 'bg-opacity-40' } ${idx === 0 ? 'rounded-l' : ''} ${idx === max ? 'rounded-r' : ''}`}
       >
@@ -13,10 +17,6 @@ function HourlyCard({ hour, idx, max }) {
         <img src={getWeatherIcon(hour.weather[0].icon)} alt={hour.weather[0].main}></img>
         <span>{parseInt(hour.temp)}&deg;</span>
       </div>
-
-      {time === '11 pm' && (
-        <div className="text-center bg-blue-600 text-white mb-4" style={{'writing-mode': 'vertical-lr', transform: 'rotate(-180deg)'}}>{day}</div>
-      )}
     </>
   )
 }
