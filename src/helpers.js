@@ -1,39 +1,47 @@
 import dayjs from 'dayjs';
 
-export function getCardinalDirection(degrees) {
-  const DIRECTION_MAP = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
-  const direction = DIRECTION_MAP[Math.round(degrees / 45) % 8];
+const DAY_MAP = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+];
 
-  return direction;
+const MONTH_MAP = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+
+const DIRECTION_MAP = [
+  'N',
+  'NE',
+  'E',
+  'SE',
+  'S',
+  'SW',
+  'W',
+  'NW'
+];
+
+export function getCardinalDirection(degrees) {
+  return DIRECTION_MAP[Math.round(degrees / 45) % 8];
 }
 
 export function getTimeStamp() {
   const now = dayjs();
-
-  const DAY_MAP = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-
-  const MONTH_MAP = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ];
 
   return {
     dayOfWeek: DAY_MAP[now.day()],
@@ -44,21 +52,11 @@ export function getTimeStamp() {
 }
 
 export function getForecastDay(day) {
-  const timestamp = new dayjs.unix(day);
+  return DAY_MAP.at(new dayjs.unix(day).day());
+}
 
-  console.log(timestamp.toString());
-
-  const idx = timestamp.day();
-
-  return [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ].at(idx);
+export function getTime(milis) {
+  return new dayjs.unix(milis).format('h a').toString();
 }
 
 export function getMoonPhase(val) {
@@ -74,4 +72,8 @@ export function getMoonPhase(val) {
   else if (val <= 0.99) phase = 'Waning Crescent';
 
   return phase;
+}
+
+export function getWeatherIcon(icon) {
+  return `http://openweathermap.org/img/wn/${icon}@2x.png`;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useEffect } from 'react';
 let autoComplete;
 
 /**
@@ -73,17 +73,11 @@ function handleScriptLoad({
   );
 }
 
-/**
- * Renders place select input and passes lat & lng of
- *  selected place up the tree for forecast lookup
- *
- * @param {*} param0 - funcs for updating lat & lng
- */
-export default function LocationInput({ setLat, setLng }) {
-  const [query, setQuery] = useState("");
-  const autoCompleteRef = useRef(null);
+export default function useLoadScript({
+  autoCompleteRef, setLat, setLng, setQuery
+}) {
 
-  useEffect(() => {
+  return useEffect(() => {
     const { REACT_APP_GOOGLE_API_KEY: API_KEY } = process.env;
     const url = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&libraries=places`;
 
@@ -92,26 +86,5 @@ export default function LocationInput({ setLat, setLng }) {
       () => handleScriptLoad({
         autoCompleteRef, setLat, setLng, setQuery
       }));
-  }, [setLat, setLng]);
-
-  return (
-    <>
-      <div>
-        <label htmlFor="city" className="sr-only">
-          City
-        </label>
-
-        <input
-          type="text"
-          name="city"
-          className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-          placeholder="Enter a City"
-          data-testid='location-input'
-          ref={autoCompleteRef}
-          onChange={event => setQuery(event.target.value)}
-          value={query}
-        />
-      </div>
-    </>
-  );
+  }, [autoCompleteRef, setLat, setLng, setQuery]);
 }
