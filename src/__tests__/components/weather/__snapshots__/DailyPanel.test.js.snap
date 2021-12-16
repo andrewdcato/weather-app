@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`properly renders with forecast data 1`] = `
+<div
+  className="mt-6"
+>
+  <h3
+    className="text-xl"
+  >
+    Daily Forecast
+  </h3>
+  <div
+    className="mt-3 place-content-center"
+  >
+    <div
+      className="text-center justify-between items-center flex overflow-x-auto overscroll-none scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-blue-400 scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+    >
+      <div
+        className="px-3 mx-3 mb-4 flex text-center items-center justify-center flex-col rounded shadow bg-blue-200 bg-opacity-80"
+      >
+        <span>
+          Wednesday
+        </span>
+        <img
+          alt="Clouds"
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+        <div
+          className="text-sm flex text-center items-center justify-center"
+        >
+          <div
+            className="flex items-center justify-center mr-3"
+          >
+            <span>
+              67
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex items-center justify-center"
+          >
+            <span>
+              59
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 mb-4 flex text-center items-center justify-center flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <span>
+          Thursday
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <div
+          className="text-sm flex text-center items-center justify-center"
+        >
+          <div
+            className="flex items-center justify-center mr-3"
+          >
+            <span>
+              70
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex items-center justify-center"
+          >
+            <span>
+              59
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 mb-4 flex text-center items-center justify-center flex-col rounded shadow bg-blue-200 bg-opacity-80"
+      >
+        <span>
+          Friday
+        </span>
+        <img
+          alt="Rain"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+        />
+        <div
+          className="text-sm flex text-center items-center justify-center"
+        >
+          <div
+            className="flex items-center justify-center mr-3"
+          >
+            <span>
+              71
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex items-center justify-center"
+          >
+            <span>
+              60
+              °
+            </span>
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clipRule="evenodd"
+                d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`properly renders with no forecast data 1`] = `
+<div
+  className="mt-6"
+>
+  <h3
+    className="text-xl"
+  >
+    Daily Forecast
+  </h3>
+  <div
+    className="mt-3 place-content-center"
+  >
+    <div
+      className="text-center justify-between items-center flex overflow-x-auto overscroll-none scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-blue-400 scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+    />
+  </div>
+</div>
+`;

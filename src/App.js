@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Divider from './components/Divider';
+import Layout from './components/Layout';
+import LocationInput from './components/LocationInput';
+import WeatherDisplay from './components/weather/WeatherDisplay';
+import useGetForecast from './hooks/useGetForecast';
 
-function App() {
+export default function App() {
+  // Latitude and Longitude for weather API call
+  const [lat, setLat] = useState(null);
+  const [lng, setLng] = useState(null);
+
+  // Forecast and animation toggle
+  const {
+    current,
+    daily,
+    hourly,
+    isLoading,
+  } = useGetForecast(lat, lng);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <LocationInput
+        setLat={setLat}
+        setLng={setLng}
+      />
+
+      <Divider />
+
+      <WeatherDisplay
+        current={current}
+        daily={daily}
+        hourly={hourly}
+        isLoading={isLoading}
+      />
+    </Layout>
+
   );
 }
 
-export default App;

@@ -1,0 +1,408 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`properly renders with forecast data 1`] = `
+Array [
+  <div
+    className="flex mb-4 justify-between items-center"
+  >
+    <div
+      className="flex flex-col"
+    >
+      <h5
+        className="mb-0 font-medium text-3xl"
+      >
+        Wednesday
+      </h5>
+      <h6>
+        April
+         
+        13
+        , 
+        2016
+      </h6>
+    </div>
+    <div
+      className="flex flex-col text-right"
+    >
+      <h5
+        className="font-medium text-3xl"
+      >
+        <span>
+          62
+          ° F
+        </span>
+      </h5>
+      <h6>
+        Clouds
+      </h6>
+    </div>
+  </div>,
+  <h3
+    className="text-xl"
+  >
+    Current Conditions
+  </h3>,
+  <div
+    className="mt-6"
+  >
+    <div
+      className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"
+    >
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Feels Like
+          </span>
+           
+          <span>
+            61
+            ° F
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Pressure
+          </span>
+           
+          <span>
+            1019
+             hPa
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Sunrise
+          </span>
+           
+          <span>
+            7 am
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Precipitation
+          </span>
+           
+          <span>
+            0
+            %
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Humidity
+          </span>
+           
+          <span>
+            77
+            %
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Sunset
+          </span>
+           
+          <span>
+            4 pm
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Wind
+          </span>
+           
+          <span>
+            14
+             MPH 
+            S
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            UV Index
+          </span>
+           
+          <span>
+            0
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+           
+          <span>
+            Waxing Gibbous
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`properly renders with no forecast data 1`] = `
+Array [
+  <div
+    className="flex mb-4 justify-between items-center"
+  >
+    <div
+      className="flex flex-col"
+    >
+      <h5
+        className="mb-0 font-medium text-3xl"
+      >
+        Wednesday
+      </h5>
+      <h6>
+        April
+         
+        13
+        , 
+        2016
+      </h6>
+    </div>
+    <div
+      className="flex flex-col text-right"
+    >
+      <h5
+        className="font-medium text-3xl"
+      >
+        <span>
+          NaN
+          ° F
+        </span>
+      </h5>
+      <h6 />
+    </div>
+  </div>,
+  <h3
+    className="text-xl"
+  >
+    Current Conditions
+  </h3>,
+  <div
+    className="mt-6"
+  >
+    <div
+      className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"
+    >
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Feels Like
+          </span>
+           
+          <span>
+            NaN
+            ° F
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Pressure
+          </span>
+           
+          <span>
+             hPa
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Sunrise
+          </span>
+           
+          <span>
+            Invalid Date
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Precipitation
+          </span>
+           
+          <span>
+            NaN
+            %
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Humidity
+          </span>
+           
+          <span>
+            %
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Sunset
+          </span>
+           
+          <span>
+            Invalid Date
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            Wind
+          </span>
+           
+          <span>
+            NaN
+             MPH 
+          </span>
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+          <span
+            className="font-semibold"
+          >
+            UV Index
+          </span>
+           
+          <span />
+        </div>
+      </div>
+      <div
+        className="px-3 mx-3 flex flex-col rounded shadow bg-blue-200 bg-opacity-40"
+      >
+        <div
+          className="text-left"
+        >
+           
+          <span>
+            New Moon
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
